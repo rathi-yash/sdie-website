@@ -48,7 +48,7 @@ export default function EnquiryForm() {
           name="name"
           type="text"
           required
-          className="w-full rounded-md border border-ink-300 px-3 py-2 text-sm"
+          className="w-full rounded-lg border border-ink-300 px-3 py-2 text-sm"
         />
       </div>
 
@@ -61,7 +61,7 @@ export default function EnquiryForm() {
           name="phone"
           type="tel"
           required
-          className="w-full rounded-md border border-ink-300 px-3 py-2 text-sm"
+          className="w-full rounded-lg border border-ink-300 px-3 py-2 text-sm"
         />
       </div>
 
@@ -73,7 +73,7 @@ export default function EnquiryForm() {
           id="course"
           name="course"
           required
-          className="w-full rounded-md border border-ink-300 px-3 py-2 text-sm"
+          className="w-full rounded-lg border border-ink-300 px-3 py-2 text-sm"
         >
           {courses.map((course) => (
             <option key={course.slug} value={course.name}>
@@ -91,14 +91,14 @@ export default function EnquiryForm() {
           id="message"
           name="message"
           rows={3}
-          className="w-full rounded-md border border-ink-300 px-3 py-2 text-sm"
+          className="w-full rounded-lg border border-ink-300 px-3 py-2 text-sm"
         />
       </div>
 
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="rounded-md bg-brand-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-brand-700 disabled:opacity-60"
+        className="rounded-lg bg-brand-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-brand-700 disabled:opacity-60"
       >
         {status === "submitting" ? "Sending..." : "Send enquiry"}
       </button>

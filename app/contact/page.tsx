@@ -13,8 +13,7 @@ export default function ContactPage() {
     <section className="px-4 py-16 md:px-8">
       <h1 className="mb-2 text-center font-display text-3xl font-semibold text-brand-900">Get in touch</h1>
       <p className="mx-auto mb-10 max-w-xl text-center text-ink-700">
-        Have a question about a course, fees, or admissions? Reach out, we typically respond
-        within [X hours/same day].
+        Questions about a course, fees, or admissions? We reply as soon as we see your message.
       </p>
 
       <div className="mx-auto grid max-w-4xl gap-10 md:grid-cols-2">
@@ -31,6 +30,9 @@ export default function ContactPage() {
             <li>{siteConfig.email}</li>
             <li>{siteConfig.hours}</li>
           </ul>
+          <p className="mt-3 text-xs text-gold-600">
+            Visiting in person? Please schedule an appointment beforehand.
+          </p>
           <div className="mt-6">
             <MapEmbed />
           </div>

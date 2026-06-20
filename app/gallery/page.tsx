@@ -19,7 +19,7 @@ export default function GalleryPage() {
         {placeholderImages.map((i) => (
           <div
             key={i}
-            className="flex aspect-square items-center justify-center border border-brand-100 bg-brand-50 text-xs text-ink-500"
+            className="flex aspect-square items-center justify-center rounded-lg border border-brand-100 bg-brand-50 text-xs text-ink-500"
           >
             [photo placeholder]
           </div>

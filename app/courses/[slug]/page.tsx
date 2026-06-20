@@ -47,7 +47,7 @@ export default function CoursePage({ params }: { params: { slug: string } }) {
       <p className="mt-3 text-sm text-ink-700">{course.careerOutcomes}</p>
 
       {course.note && (
-        <p className="mt-4 rounded-md bg-ink-50 p-3 text-sm text-ink-700">{course.note}</p>
+        <p className="mt-4 rounded-lg bg-ink-50 p-3 text-sm text-ink-700">{course.note}</p>
       )}
 
       <div className="mt-10">

@@ -4,6 +4,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import CourseCard from "@/components/CourseCard";
 import FacultyCard from "@/components/FacultyCard";
 import FAQAccordion from "@/components/FAQAccordion";
+import FounderNote from "@/components/FounderNote";
 import MapEmbed from "@/components/MapEmbed";
 import { siteConfig } from "@/lib/site-config";
 import { courses } from "@/lib/courses";
@@ -67,7 +68,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-t border-brand-100 bg-paper px-4 py-20 md:px-8">
+      <section id="faculty" className="scroll-mt-20 border-t border-brand-100 bg-paper px-4 py-20 md:px-8">
         <div className="mx-auto mb-10 max-w-xl text-center">
           <span className="text-xs uppercase tracking-[0.2em] text-gold-600">Faculty</span>
           <h2 className="mt-2 font-display text-3xl font-semibold text-brand-900">
@@ -77,17 +78,14 @@ export default function HomePage() {
             Learn from instructors who have trained thousands of teachers.
           </p>
         </div>
-        <div className="mx-auto grid max-w-4xl gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto flex max-w-4xl flex-wrap justify-center gap-4 sm:flex-nowrap sm:gap-6">
           {faculty.map((member) => (
             <FacultyCard key={member.name} member={member} />
           ))}
         </div>
-        <p className="mt-8 text-center">
-          <Link href="/faculty" className="text-sm font-medium text-brand-700 hover:text-gold-600">
-            Meet the full faculty &rarr;
-          </Link>
-        </p>
       </section>
+
+      <FounderNote />
 
       <section className="bg-brand-900 px-4 py-20 text-center md:px-8">
         <span className="text-xs uppercase tracking-[0.2em] text-gold-400">Results</span>

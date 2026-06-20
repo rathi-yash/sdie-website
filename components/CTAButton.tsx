@@ -8,7 +8,7 @@ type CTAButtonProps = {
 
 export default function CTAButton({ href, children, variant = "primary" }: CTAButtonProps) {
   const base =
-    "inline-block rounded-sm px-6 py-3 text-sm font-medium tracking-wide transition-all duration-150";
+    "inline-block rounded-lg px-6 py-3 text-sm font-medium tracking-wide transition-all duration-150";
   const variants = {
     primary: "bg-brand-700 text-white shadow-sm hover:bg-brand-600 hover:shadow-md",
     whatsapp: "bg-green-700 text-white shadow-sm hover:bg-green-600 hover:shadow-md",

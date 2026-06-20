@@ -7,7 +7,7 @@ export default function FAQAccordion({ items }: { items: FAQItem[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <div className="divide-y divide-brand-100 border border-brand-100 bg-white">
+    <div className="divide-y divide-brand-100 overflow-hidden rounded-lg border border-brand-100 bg-white">
       {items.map((item, index) => {
         const isOpen = openIndex === index;
         return (
