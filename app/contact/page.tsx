@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import EnquiryForm from "@/components/EnquiryForm";
 import MapEmbed from "@/components/MapEmbed";
 import { siteConfig } from "@/lib/site-config";
+
+export const metadata: Metadata = {
+  title: "Contact | NIE Branch",
+  description: "Get in touch with us for questions about courses, fees, or admissions.",
+};
 
 export default function ContactPage() {
   return (

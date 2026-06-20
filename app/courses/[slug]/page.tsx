@@ -1,9 +1,18 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import CTAButton from "@/components/CTAButton";
 import { courses, getCourseBySlug } from "@/lib/courses";
 
 export function generateStaticParams() {
   return courses.map((course) => ({ slug: course.slug }));
+}
+
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const course = getCourseBySlug(params.slug);
+  return {
+    title: course ? `${course.name} | NIE Branch` : "Course | NIE Branch",
+    description: course?.shortDescription ?? "Teacher training course details.",
+  };
 }
 
 export default function CoursePage({ params }: { params: { slug: string } }) {

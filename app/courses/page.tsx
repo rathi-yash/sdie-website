@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import CourseCard from "@/components/CourseCard";
 import { courses } from "@/lib/courses";
+
+export const metadata: Metadata = {
+  title: "Courses | NIE Branch",
+  description: "Explore our teacher training courses including NTT, PTT, English Speaking, Personality Development, B.Ed, and M.Ed.",
+};
 
 export default function CoursesPage() {
   return (

@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import FAQAccordion from "@/components/FAQAccordion";
 import { faqs } from "@/lib/faq";
+
+export const metadata: Metadata = {
+  title: "FAQ | NIE Branch",
+  description: "Answers to frequently asked questions about our teacher training courses, admissions, and fees.",
+};
 
 export default function FAQPage() {
   return (

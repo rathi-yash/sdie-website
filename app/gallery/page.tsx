@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
+
+export const metadata: Metadata = {
+  title: "Gallery | NIE Branch",
+  description: "A look inside our classrooms, events, and student activities.",
+};
 
 const placeholderImages = Array.from({ length: 6 }, (_, i) => i);
 

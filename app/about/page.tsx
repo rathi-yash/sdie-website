@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
+
+export const metadata: Metadata = {
+  title: "About us | NIE Branch",
+  description: "Learn about this NIE branch, its approach to teacher training, and its accreditation.",
+};
 
 export default function AboutPage() {
   return (
