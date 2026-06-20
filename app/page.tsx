@@ -24,8 +24,8 @@ export default function HomePage() {
             <span className="italic text-gold-400">job-ready</span> teacher
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-brand-100">
-            Teacher training in {siteConfig.city}, training educators across India for over{" "}
-            {siteConfig.yearsRunning} years.
+            Teacher training in {siteConfig.city}, led by faculty with {siteConfig.facultyExperience}{" "}
+            years of classroom experience.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <CTAButton href="/contact">Enroll now</CTAButton>
@@ -37,8 +37,8 @@ export default function HomePage() {
       <section className="border-b border-brand-100 bg-paper px-4 py-10 md:px-8">
         <div className="mx-auto grid max-w-4xl grid-cols-2 divide-x divide-brand-100 text-center md:grid-cols-4">
           <div className="px-2">
-            <p className="font-display text-3xl font-semibold text-brand-700">{siteConfig.yearsRunning}</p>
-            <p className="mt-1 text-sm text-ink-700">Years training teachers</p>
+            <p className="font-display text-3xl font-semibold text-brand-700">{siteConfig.facultyExperience}</p>
+            <p className="mt-1 text-sm text-ink-700">Years of faculty experience</p>
           </div>
           <div className="px-2">
             <p className="font-display text-3xl font-semibold text-brand-700">{siteConfig.studentsTrained}</p>

@@ -13,8 +13,9 @@ export default function AboutPage() {
       <h1 className="mt-2 font-display text-3xl font-semibold text-brand-900">About {siteConfig.branchName}</h1>
 
       <p className="mt-6 text-ink-700">
-        {siteConfig.branchName} trains teachers and education professionals in {siteConfig.city}{" "}
-        for over {siteConfig.yearsRunning} years.
+        {siteConfig.branchName} trains teachers and education professionals in{" "}
+        {siteConfig.city}, led by faculty with {siteConfig.facultyExperience} years of classroom
+        experience.
       </p>
       <p className="mt-4 text-ink-700">
         We offer a complete course lineup: Nursery Teacher Training, Primary Teacher Training,
