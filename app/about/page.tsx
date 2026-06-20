@@ -9,7 +9,8 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-16 md:px-8">
-      <h1 className="text-3xl font-semibold text-ink-900">About {siteConfig.branchName}</h1>
+      <span className="text-xs uppercase tracking-[0.2em] text-gold-600">About us</span>
+      <h1 className="mt-2 font-display text-3xl font-semibold text-brand-900">About {siteConfig.branchName}</h1>
 
       <p className="mt-6 text-ink-700">
         {siteConfig.branchName} is a branch of NIE, operating under the Maa Sumitra Devi Education
@@ -23,13 +24,13 @@ export default function AboutPage() {
         leave ready to teach, not just certified to teach.
       </p>
 
-      <h2 className="mt-10 text-xl font-semibold text-ink-900">Our approach</h2>
+      <h2 className="mt-10 font-display text-xl font-semibold text-brand-900">Our approach</h2>
       <p className="mt-3 text-ink-700">
         Small batch sizes, instructors with real classroom experience, and a focus on practical
         teaching skills alongside the required coursework.
       </p>
 
-      <h2 className="mt-10 text-xl font-semibold text-ink-900">Accreditation</h2>
+      <h2 className="mt-10 font-display text-xl font-semibold text-brand-900">Accreditation</h2>
       <p className="mt-3 text-ink-700">[NCTE registration number, if available]</p>
     </article>
   );

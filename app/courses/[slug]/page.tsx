@@ -21,7 +21,8 @@ export default function CoursePage({ params }: { params: { slug: string } }) {
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-16 md:px-8">
-      <h1 className="text-3xl font-semibold text-ink-900">{course.name}</h1>
+      <span className="text-xs uppercase tracking-[0.2em] text-gold-600">Course</span>
+      <h1 className="mt-2 font-display text-3xl font-semibold text-brand-900">{course.name}</h1>
       <p className="mt-3 text-ink-700">{course.description}</p>
 
       <dl className="mt-8 grid gap-6 sm:grid-cols-2">
@@ -35,14 +36,14 @@ export default function CoursePage({ params }: { params: { slug: string } }) {
         </div>
       </dl>
 
-      <h2 className="mt-10 text-xl font-semibold text-ink-900">What you&apos;ll learn</h2>
+      <h2 className="mt-10 font-display text-xl font-semibold text-brand-900">What you&apos;ll learn</h2>
       <ul className="mt-3 list-inside list-disc space-y-1 text-sm text-ink-700">
         {course.whatYouWillLearn.map((item) => (
           <li key={item}>{item}</li>
         ))}
       </ul>
 
-      <h2 className="mt-10 text-xl font-semibold text-ink-900">Career outcomes</h2>
+      <h2 className="mt-10 font-display text-xl font-semibold text-brand-900">Career outcomes</h2>
       <p className="mt-3 text-sm text-ink-700">{course.careerOutcomes}</p>
 
       {course.note && (

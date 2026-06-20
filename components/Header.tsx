@@ -18,24 +18,31 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="border-b border-ink-100 bg-white">
+    <header className="sticky top-0 z-40 border-b-2 border-brand-700 bg-paper/95 backdrop-blur-sm">
       <div className="flex items-center justify-between gap-4 px-4 py-3 md:px-8">
         <div className="flex flex-col">
-          <Link href="/" className="text-lg font-semibold text-ink-900">
+          <Link href="/" className="font-display text-xl font-semibold tracking-tight text-brand-700">
             {siteConfig.branchName}
           </Link>
-          <span className="text-xs text-ink-500">a branch of NIE / MSDEF</span>
+          <span className="text-[11px] uppercase tracking-[0.18em] text-gold-600">
+            a branch of NIE &middot; MSDEF
+          </span>
         </div>
 
-        <nav className="hidden items-center gap-6 md:flex">
+        <nav className="hidden items-center gap-7 md:flex">
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="text-sm text-ink-700 hover:text-brand-600">
+            <Link
+              key={link.href}
+              href={link.href}
+              className="group relative text-sm text-ink-700 transition-colors hover:text-brand-700"
+            >
               {link.label}
+              <span className="absolute -bottom-1 left-0 h-px w-0 bg-gold-500 transition-all duration-200 group-hover:w-full" />
             </Link>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-4 md:flex">
           <a href={`tel:${siteConfig.helpline}`} className="text-sm text-ink-700">
             {siteConfig.helpline}
           </a>
@@ -55,12 +62,12 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <nav className="flex flex-col gap-1 border-t border-ink-100 px-4 py-3 md:hidden">
+        <nav className="flex flex-col gap-1 border-t border-brand-100 bg-paper px-4 py-3 md:hidden">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="rounded px-2 py-2 text-sm text-ink-700 hover:bg-ink-50"
+              className="rounded px-2 py-2 text-sm text-ink-700 hover:bg-brand-50"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}

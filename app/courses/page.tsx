@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function CoursesPage() {
   return (
     <section className="px-4 py-16 md:px-8">
-      <h1 className="mb-2 text-center text-3xl font-semibold text-ink-900">Our courses</h1>
+      <h1 className="mb-2 text-center font-display text-3xl font-semibold text-brand-900">Our courses</h1>
       <p className="mx-auto mb-10 max-w-xl text-center text-ink-700">
         The same course lineup taught across the NIE network.
       </p>
