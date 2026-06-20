@@ -36,14 +36,10 @@ export default function HomePage() {
       </section>
 
       <section className="border-b border-brand-100 bg-paper px-4 py-10 md:px-8">
-        <div className="mx-auto grid max-w-4xl grid-cols-2 divide-x divide-brand-100 text-center md:grid-cols-4">
+        <div className="mx-auto grid max-w-3xl grid-cols-1 divide-x divide-brand-100 text-center sm:grid-cols-3">
           <div className="px-2">
             <p className="font-display text-3xl font-semibold text-brand-700">{siteConfig.facultyExperience}</p>
             <p className="mt-1 text-sm text-ink-700">Years of faculty experience</p>
-          </div>
-          <div className="px-2">
-            <p className="font-display text-3xl font-semibold text-brand-700">{siteConfig.studentsTrained}</p>
-            <p className="mt-1 text-sm text-ink-700">Students trained</p>
           </div>
           <div className="px-2">
             <p className="font-display text-3xl font-semibold text-brand-700">{siteConfig.coursesOffered}</p>
@@ -87,15 +83,7 @@ export default function HomePage() {
 
       <FounderNote />
 
-      <section className="bg-brand-900 px-4 py-20 text-center md:px-8">
-        <span className="text-xs uppercase tracking-[0.2em] text-gold-400">Results</span>
-        <h2 className="mt-2 font-display text-3xl font-semibold text-white">Our results</h2>
-        <p className="mx-auto mt-3 max-w-2xl text-brand-100">
-          Our students go on to teach in schools across {siteConfig.city}.
-        </p>
-      </section>
-
-      <section className="px-4 py-20 md:px-8">
+      <section className="border-t border-brand-100 bg-paper px-4 py-20 md:px-8">
         <div className="mx-auto mb-10 max-w-xl text-center">
           <span className="text-xs uppercase tracking-[0.2em] text-gold-600">Centre</span>
           <h2 className="mt-2 font-display text-3xl font-semibold text-brand-900">Visit the centre</h2>
@@ -110,7 +98,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-t border-brand-100 bg-paper px-4 py-20 md:px-8">
+      <section className="border-t border-brand-100 px-4 py-20 md:px-8">
         <div className="mx-auto mb-10 max-w-xl text-center">
           <span className="text-xs uppercase tracking-[0.2em] text-gold-600">FAQ</span>
           <h2 className="mt-2 font-display text-3xl font-semibold text-brand-900">

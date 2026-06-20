@@ -9,7 +9,6 @@ export const siteConfig = {
   hours: "Mon to Sat, 9 am to 6 pm",
   city: "Noida",
   facultyExperience: "10+",
-  studentsTrained: "5,000+",
   coursesOffered: "6",
   socialLinks: {
     facebook: "[Facebook]",
