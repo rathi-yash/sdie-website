@@ -1,8 +1,8 @@
 export const siteConfig = {
   branchName: "[branch name]",
-  helpline: "[phone number]",
-  whatsappLink: "https://wa.me/[phone number]",
-  email: "[branch]@nie.net.in",
+  helpline: "+91 9217228450",
+  whatsappLink: "https://wa.me/919217228450",
+  email: "sdienoida@gmail.com",
   address: "[address line], [city], [state]",
   hours: "Mon to Sat, 9 am to 6 pm",
   city: "[city]",
