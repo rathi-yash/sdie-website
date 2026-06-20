@@ -4,7 +4,7 @@ import MapEmbed from "@/components/MapEmbed";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Contact | NIE Branch",
+  title: "Contact | [branch name]",
   description: "Get in touch with us for questions about courses, fees, or admissions.",
 };
 

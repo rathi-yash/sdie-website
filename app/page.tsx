@@ -17,15 +17,15 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-grain mix-blend-overlay" aria-hidden="true" />
         <div className="relative">
           <span className="inline-block text-xs uppercase tracking-[0.25em] text-gold-400">
-            A branch of NIE / MSDEF
+            {siteConfig.branchName}
           </span>
           <h1 className="mx-auto mt-4 max-w-2xl font-display text-4xl font-semibold leading-tight text-white md:text-5xl">
             Become a confident,{" "}
             <span className="italic text-gold-400">job-ready</span> teacher
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-brand-100">
-            Teacher training in {siteConfig.city}, part of the NIE network, training educators
-            across India for over {siteConfig.yearsRunning} years.
+            Teacher training in {siteConfig.city}, training educators across India for over{" "}
+            {siteConfig.yearsRunning} years.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <CTAButton href="/contact">Enroll now</CTAButton>
@@ -74,7 +74,7 @@ export default function HomePage() {
             Meet your instructors
           </h2>
           <p className="mt-3 text-ink-700">
-            Learn from instructors who have trained thousands of teachers across the NIE network.
+            Learn from instructors who have trained thousands of teachers.
           </p>
         </div>
         <div className="mx-auto grid max-w-4xl gap-5 sm:grid-cols-2 lg:grid-cols-4">

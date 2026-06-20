@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "About us | NIE Branch",
-  description: "Learn about this NIE branch, its approach to teacher training, and its accreditation.",
+  title: "About us | [branch name]",
+  description: "Learn about our teacher training institute, our approach, and our accreditation.",
 };
 
 export default function AboutPage() {
@@ -13,15 +13,14 @@ export default function AboutPage() {
       <h1 className="mt-2 font-display text-3xl font-semibold text-brand-900">About {siteConfig.branchName}</h1>
 
       <p className="mt-6 text-ink-700">
-        {siteConfig.branchName} is a branch of NIE, operating under the Maa Sumitra Devi Education
-        Foundation (MSDEF), training teachers and education professionals in {siteConfig.city} for
-        over {siteConfig.yearsRunning} years.
+        {siteConfig.branchName} trains teachers and education professionals in {siteConfig.city}{" "}
+        for over {siteConfig.yearsRunning} years.
       </p>
       <p className="mt-4 text-ink-700">
-        We offer the same course lineup taught across the NIE network: Nursery Teacher Training,
-        Primary Teacher Training, English Speaking, Personality Development, B.Ed, and M.Ed. Our
-        approach combines structured curriculum with hands-on classroom practice, so graduates
-        leave ready to teach, not just certified to teach.
+        We offer a complete course lineup: Nursery Teacher Training, Primary Teacher Training,
+        English Speaking, Personality Development, B.Ed, and M.Ed. Our approach combines
+        structured curriculum with hands-on classroom practice, so graduates leave ready to
+        teach, not just certified to teach.
       </p>
 
       <h2 className="mt-10 font-display text-xl font-semibold text-brand-900">Our approach</h2>

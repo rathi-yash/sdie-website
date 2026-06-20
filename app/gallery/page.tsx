@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Gallery | NIE Branch",
+  title: "Gallery | [branch name]",
   description: "A look inside our classrooms, events, and student activities.",
 };
 

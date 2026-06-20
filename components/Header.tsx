@@ -25,7 +25,7 @@ export default function Header() {
             {siteConfig.branchName}
           </Link>
           <span className="text-[11px] uppercase tracking-[0.18em] text-gold-600">
-            a branch of NIE &middot; MSDEF
+            Teacher training institute
           </span>
         </div>
 

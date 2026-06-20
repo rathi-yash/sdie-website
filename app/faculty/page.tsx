@@ -3,8 +3,8 @@ import FacultyCard from "@/components/FacultyCard";
 import { faculty } from "@/lib/faculty";
 
 export const metadata: Metadata = {
-  title: "Faculty | NIE Branch",
-  description: "Meet the instructors at this NIE branch, real classroom experience behind every course.",
+  title: "Faculty | [branch name]",
+  description: "Meet our instructors, real classroom experience behind every course.",
 };
 
 export default function FacultyPage() {

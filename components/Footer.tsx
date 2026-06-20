@@ -17,7 +17,7 @@ export default function Footer() {
         <div>
           <p className="font-display text-lg font-semibold text-white">{siteConfig.branchName}</p>
           <p className="mt-1 text-xs uppercase tracking-[0.18em] text-gold-400">
-            a branch of NIE &middot; MSDEF
+            Teacher training institute
           </p>
         </div>
 
@@ -54,7 +54,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-brand-700/60 px-4 py-4 text-center text-xs text-brand-200">
-        {siteConfig.branchName} — a branch of NIE / MSDEF
+        &copy; {siteConfig.branchName}
       </div>
     </footer>
   );

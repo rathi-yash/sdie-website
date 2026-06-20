@@ -18,9 +18,9 @@ const sans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "NIE Branch | Teacher Training Institute",
+  title: "[branch name] | Teacher Training Institute",
   description:
-    "Teacher training courses including NTT, PTT, English Speaking, Personality Development, B.Ed, and M.Ed. A branch of NIE / MSDEF.",
+    "Teacher training courses including NTT, PTT, English Speaking, Personality Development, B.Ed, and M.Ed.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
