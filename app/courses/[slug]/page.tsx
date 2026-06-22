@@ -51,7 +51,7 @@ export default function CoursePage({ params }: { params: { slug: string } }) {
       )}
 
       <div className="mt-10">
-        <CTAButton href="/contact">Enroll now</CTAButton>
+        <CTAButton href="/#contact">Enroll now</CTAButton>
       </div>
     </article>
   );

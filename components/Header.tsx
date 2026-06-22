@@ -7,11 +7,11 @@ import CTAButton from "./CTAButton";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/courses", label: "Courses" },
+  { href: "/#programs", label: "Courses" },
   { href: "/about", label: "About" },
   { href: "/#faculty", label: "Faculty" },
   { href: "/#gallery", label: "Gallery" },
-  { href: "/contact", label: "Contact" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Header() {
@@ -46,7 +46,7 @@ export default function Header() {
           <a href={`tel:${siteConfig.helpline}`} className="text-sm text-ink-700">
             {siteConfig.helpline}
           </a>
-          <CTAButton href="/contact">Enroll now</CTAButton>
+          <CTAButton href="/#contact">Enroll now</CTAButton>
         </div>
 
         <button
@@ -77,7 +77,7 @@ export default function Header() {
             {siteConfig.helpline}
           </a>
           <div className="px-2 py-2">
-            <CTAButton href="/contact">Enroll now</CTAButton>
+            <CTAButton href="/#contact">Enroll now</CTAButton>
           </div>
         </nav>
       )}

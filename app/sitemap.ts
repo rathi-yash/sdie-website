@@ -4,7 +4,7 @@ import { courses } from "@/lib/courses";
 const baseUrl = "https://example.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/courses", "/about", "/contact", "/faq"].map(
+  const staticRoutes = ["", "/about", "/faq"].map(
     (route) => ({ url: `${baseUrl}${route}` })
   );
   const courseRoutes = courses.map((course) => ({ url: `${baseUrl}/courses/${course.slug}` }));

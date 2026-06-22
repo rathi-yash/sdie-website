@@ -4,10 +4,10 @@ import { siteConfig } from "@/lib/site-config";
 const quickLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/courses", label: "Courses" },
+  { href: "/#programs", label: "Courses" },
   { href: "/#faculty", label: "Faculty" },
   { href: "/#gallery", label: "Gallery" },
-  { href: "/contact", label: "Contact" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Footer() {

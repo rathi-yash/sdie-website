@@ -1,6 +1,7 @@
 import Link from "next/link";
 import CTAButton from "@/components/CTAButton";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import EnquiryForm from "@/components/EnquiryForm";
 import CourseCard from "@/components/CourseCard";
 import FacultyCard from "@/components/FacultyCard";
 import FAQAccordion from "@/components/FAQAccordion";
@@ -30,7 +31,7 @@ export default function HomePage() {
             years of classroom experience.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <CTAButton href="/contact">Enroll now</CTAButton>
+            <CTAButton href="/#contact">Enroll now</CTAButton>
             <WhatsAppButton />
           </div>
         </div>
@@ -53,7 +54,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="px-4 py-20 md:px-8">
+      <section id="programs" className="scroll-mt-20 px-4 py-20 md:px-8">
         <div className="mx-auto mb-10 max-w-xl text-center">
           <span className="text-xs uppercase tracking-[0.2em] text-gold-600">Programs</span>
           <h2 className="mt-2 font-display text-3xl font-semibold text-brand-900">Our courses</h2>
@@ -94,18 +95,40 @@ export default function HomePage() {
 
       <FounderNote />
 
-      <section className="border-t border-brand-100 bg-paper px-4 py-20 md:px-8">
+      <section id="contact" className="scroll-mt-20 border-t border-brand-100 bg-paper px-4 py-20 md:px-8">
         <div className="mx-auto mb-10 max-w-xl text-center">
-          <span className="text-xs uppercase tracking-[0.2em] text-gold-600">Centre</span>
-          <h2 className="mt-2 font-display text-3xl font-semibold text-brand-900">Visit the centre</h2>
+          <span className="text-xs uppercase tracking-[0.2em] text-gold-600">Contact</span>
+          <h2 className="mt-2 font-display text-3xl font-semibold text-brand-900">Get in touch</h2>
+          <p className="mt-3 text-ink-700">
+            Questions about a course, fees, or admissions? We reply as soon as we see your message.
+          </p>
         </div>
-        <div className="mx-auto grid max-w-4xl gap-8 md:grid-cols-2">
-          <div className="space-y-2 self-center text-sm text-ink-700">
-            <p>{siteConfig.address}</p>
-            <p>{siteConfig.hours}</p>
-            <p>{siteConfig.email}</p>
+        <div className="mx-auto grid max-w-4xl gap-10 md:grid-cols-2">
+          <div>
+            <h3 className="mb-3 font-display text-lg font-semibold text-brand-900">Centre details</h3>
+            <ul className="space-y-2 text-sm text-ink-700">
+              <li>{siteConfig.address}</li>
+              <li>{siteConfig.helpline}</li>
+              <li>
+                <a href={siteConfig.whatsappLink} className="text-brand-700 hover:text-gold-600 hover:underline">
+                  Chat on WhatsApp
+                </a>
+              </li>
+              <li>{siteConfig.email}</li>
+              <li>{siteConfig.hours}</li>
+            </ul>
+            <p className="mt-3 text-xs text-gold-600">
+              Visiting in person? Please schedule an appointment beforehand.
+            </p>
+            <div className="mt-6">
+              <MapEmbed />
+            </div>
           </div>
-          <MapEmbed />
+
+          <div>
+            <h3 className="mb-3 font-display text-lg font-semibold text-brand-900">Send an enquiry</h3>
+            <EnquiryForm />
+          </div>
         </div>
       </section>
 
