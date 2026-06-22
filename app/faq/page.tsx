@@ -3,7 +3,7 @@ import FAQAccordion from "@/components/FAQAccordion";
 import { faqs } from "@/lib/faq";
 
 export const metadata: Metadata = {
-  title: "FAQ | [branch name]",
+  title: "FAQ | SDIE",
   description: "Answers to frequently asked questions about our teacher training courses, admissions, and fees.",
 };
 

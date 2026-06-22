@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "About us | [branch name]",
+  title: "About us | SDIE",
   description: "Learn about our teacher training institute, our approach, and our accreditation.",
 };
 

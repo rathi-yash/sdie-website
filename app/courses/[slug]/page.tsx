@@ -10,7 +10,7 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const course = getCourseBySlug(params.slug);
   return {
-    title: course ? `${course.name} | [branch name]` : "Course | [branch name]",
+    title: course ? `${course.name} | SDIE` : "Course | SDIE",
     description: course?.shortDescription ?? "Teacher training course details.",
   };
 }

@@ -18,7 +18,7 @@ const sans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "[branch name] | Teacher Training Institute",
+  title: "SDIE | Teacher Training Institute",
   description:
     "Teacher training courses including NTT, PTT, English Speaking, Personality Development, B.Ed, and M.Ed.",
 };
