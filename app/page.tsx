@@ -82,7 +82,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-t border-brand-100 px-4 py-20 md:px-8">
+      <section id="gallery" className="scroll-mt-20 border-t border-brand-100 px-4 py-20 md:px-8">
         <div className="mx-auto mb-10 max-w-xl text-center">
           <span className="text-xs uppercase tracking-[0.2em] text-gold-600">Gallery</span>
           <h2 className="mt-2 font-display text-3xl font-semibold text-brand-900">
