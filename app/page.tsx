@@ -5,6 +5,7 @@ import CourseCard from "@/components/CourseCard";
 import FacultyCard from "@/components/FacultyCard";
 import FAQAccordion from "@/components/FAQAccordion";
 import FounderNote from "@/components/FounderNote";
+import GalleryCarousel from "@/components/GalleryCarousel";
 import MapEmbed from "@/components/MapEmbed";
 import { siteConfig } from "@/lib/site-config";
 import { courses } from "@/lib/courses";
@@ -79,6 +80,16 @@ export default function HomePage() {
             <FacultyCard key={member.name} member={member} />
           ))}
         </div>
+      </section>
+
+      <section className="border-t border-brand-100 px-4 py-20 md:px-8">
+        <div className="mx-auto mb-10 max-w-xl text-center">
+          <span className="text-xs uppercase tracking-[0.2em] text-gold-600">Gallery</span>
+          <h2 className="mt-2 font-display text-3xl font-semibold text-brand-900">
+            A look inside {siteConfig.branchName}
+          </h2>
+        </div>
+        <GalleryCarousel />
       </section>
 
       <FounderNote />
