@@ -1,7 +1,7 @@
 export const siteConfig = {
   branchName: "SDIE",
   fullName: "Sharda Devi Institute of Education",
-  founderName: "Neetu Rathi",
+  founderName: "Neetu Singh",
   helpline: "+91 9217228450",
   whatsappLink: "https://wa.me/919217228450",
   email: "sdienoida@gmail.com",
